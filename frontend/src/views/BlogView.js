@@ -11,7 +11,7 @@ export default class BlogView extends Component {
   _retrievePostandComments = async () => {
     const { postId } = this.props.match.params;
     const thisPost = await axios
-      .get("https://the-ink-hhkohdvsan.now.shusers/user/" + postId)
+      .get("https://the-ink-hhkohdvsan.now.sh/users/user/" + postId)
       .then(post => {
         return post.data;
       });

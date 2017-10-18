@@ -35,7 +35,7 @@ class App extends Component {
     };
     if (token) {
       axios
-        .post("https://the-ink-hhkohdvsan.now.shusers/reauth", token)
+        .post("https://the-ink-hhkohdvsan.now.sh/users/reauth", token)
         .then(response => {
           response;
           window.localStorage.setItem("token", response.data.token);

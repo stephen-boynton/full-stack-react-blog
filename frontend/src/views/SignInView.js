@@ -17,7 +17,7 @@ export default class SignInView extends Component {
       pass: e.target[1].value
     };
     axios
-      .post("https://the-ink-hhkohdvsan.now.shusers/signin", login)
+      .post("https://the-ink-hhkohdvsan.now.sh/users/signin", login)
       .then(response => {
         if (response.data) {
           this.setState({
