@@ -1,15 +1,15 @@
-const pg = require("pg");
+// const pg = require("pg");
 const sqlite3 = require("sqlite3");
 const Promise = require("bluebird");
 const objection = require("objection");
 const Model = objection.Model;
 const Knex = require("knex");
 
-const knex = Knex({
-  client: "pg",
-  version: "7.3.0",
-  connection: process.env.DATABASE_URl,
-  searchPath: "knex,public"
+var knex = Knex({
+  client: "sqlite3",
+  connection: {
+    filename: "./db/blog.db"
+  }
 });
 
 Model.knex(knex);
