@@ -7,11 +7,7 @@ const Knex = require("knex");
 const knex = Knex({
   client: pg,
   connection: {
-    host: "ec2-54-225-192-243.compute-1.amazonaws.com",
-    database: "d89sp6alqta4na",
-    User: "zsuslwudgpxuhp",
-    Port: process.env.DB_PORT,
-    Password: process.env.DB_PASS
+    URI: process.env.DATABASE_URI
   }
 });
 
