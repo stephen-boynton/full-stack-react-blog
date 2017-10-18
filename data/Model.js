@@ -4,7 +4,6 @@ const Promise = require("bluebird");
 const objection = require("objection");
 const Model = objection.Model;
 const Knex = require("knex");
-
 const knex = Knex({
   client: "pg",
   connection: process.env.DATABASE_URL
