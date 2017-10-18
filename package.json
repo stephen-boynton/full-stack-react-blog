@@ -8,6 +8,7 @@
   "engines": {
     "node": "8.2.1"
   },
+  "homepage": "https://stephen-boynton.github.io/full-stack-react-blog/",
   "dependencies": {
     "axios": "^0.16.2",
     "bcrypt": "^1.0.3",

@@ -7,7 +7,7 @@ const Knex = require("knex");
 const knex = Knex({
   client: "sqlite3",
   connection: {
-    filename: __dirname + "/db/blog.db"
+    filename: "/db/blog.db"
   }
 });
 
