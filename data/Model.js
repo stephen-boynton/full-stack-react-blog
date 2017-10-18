@@ -5,9 +5,13 @@ const Model = objection.Model;
 const Knex = require("knex");
 
 const knex = Knex({
-  client: "sqlite3",
+  client: "pg",
   connection: {
-    filename: "/db/blog.db"
+    host: "ec2-54-225-192-243.compute-1.amazonaws.com",
+    user: "zsuslwudgpxuhp",
+    password: process.env.DB_PASS,
+    port: process.env.DB_PORT,
+    database: "d89sp6alqta4na"
   }
 });
 
