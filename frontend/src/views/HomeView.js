@@ -18,15 +18,17 @@ export default class MainView extends Component {
   }
 
   _fetchFrontPageContent = () => {
-    axios.get("https://glacial-thicket-62880.herokuapp.com/homeview";).then(content => {
-      const data = content.data;
-      this.setState({
-        latest: data.last[0],
-        featured: data.featuredArt[0],
-        smallBlogs: data.recent,
-        featuredComments: data.featuredCom
+    axios
+      .get("https://glacial-thicket-62880.herokuapp.com/homeview")
+      .then(content => {
+        const data = content.data;
+        this.setState({
+          latest: data.last[0],
+          featured: data.featuredArt[0],
+          smallBlogs: data.recent,
+          featuredComments: data.featuredCom
+        });
       });
-    });
   };
 
   _truncateText = blogBody => {

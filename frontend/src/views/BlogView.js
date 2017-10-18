@@ -10,9 +10,11 @@ export default class BlogView extends Component {
   };
   _retrievePostandComments = async () => {
     const { postId } = this.props.match.params;
-    const thisPost = await axios.get("https://glacial-thicket-62880.herokuapp.com/users/user/"; + postId).then(post => {
-      return post.data;
-    });
+    const thisPost = await axios
+      .get("https://glacial-thicket-62880.herokuapp.com/users/user/" + postId)
+      .then(post => {
+        return post.data;
+      });
     this.setState({
       post: thisPost.post,
       comments: thisPost.comments

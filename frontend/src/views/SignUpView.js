@@ -19,26 +19,31 @@ export default class SignUpView extends Component {
       avatar: e.target[5].value,
       bio: e.target[6].value
     };
-    axios.post("https://glacial-thicket-62880.herokuapp.com/users/signup";, newMember).then(response => {
-      if (!response.data) {
-        this.setState({
-          errorMessage: "* Username already exists. *"
-        });
-        return;
-      } else {
-        e.target[0].value = "";
-        e.target[1].value = "";
-        e.target[2].value = "";
-        e.target[3].value = "";
-        e.target[4].value = "";
-        e.target[5].value = "";
-        e.target[6].value = "";
-        this.setState({
-          errorMessage: "",
-          success: true
-        });
-      }
-    });
+    axios
+      .post(
+        "https://glacial-thicket-62880.herokuapp.com/users/signup",
+        newMember
+      )
+      .then(response => {
+        if (!response.data) {
+          this.setState({
+            errorMessage: "* Username already exists. *"
+          });
+          return;
+        } else {
+          e.target[0].value = "";
+          e.target[1].value = "";
+          e.target[2].value = "";
+          e.target[3].value = "";
+          e.target[4].value = "";
+          e.target[5].value = "";
+          e.target[6].value = "";
+          this.setState({
+            errorMessage: "",
+            success: true
+          });
+        }
+      });
   };
   _showForm() {
     if (this.state.success) {
