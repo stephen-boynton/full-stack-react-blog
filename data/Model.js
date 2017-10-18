@@ -1,11 +1,12 @@
 const pg = require("pg");
+const sqlite3 = require("sqlite3");
 const Promise = require("bluebird");
 const objection = require("objection");
 const Model = objection.Model;
 const Knex = require("knex");
 
 const knex = Knex({
-  client: "postgresql",
+  client: "pg",
   version: "7.3.0",
   connection: process.env.DATABASE_URl
 });
