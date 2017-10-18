@@ -5,10 +5,9 @@ const Model = objection.Model;
 const Knex = require("knex");
 
 const knex = Knex({
-  client: pg,
-  connection: {
-    URI: process.env.DATABASE_URI
-  }
+  client: "postgresql",
+  version: "7.3.0",
+  connection: process.env.DATABASE_URI
 });
 
 Model.knex(knex);
