@@ -7,7 +7,7 @@ const Knex = require("knex");
 
 const knex = Knex({
   client: "pg",
-  connection: process.env.DATABASE_URl
+  connection: process.env.DATABASE_URL
 });
 
 Model.knex(knex);
