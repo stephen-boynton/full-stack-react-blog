@@ -5,11 +5,9 @@ const objection = require("objection");
 const Model = objection.Model;
 const Knex = require("knex");
 
-var knex = Knex({
-  client: "sqlite3",
-  connection: {
-    filename: __dirname + "/db/blog.db"
-  }
+const knex = Knex({
+  client: "pg",
+  connection: process.env.DATABASE_URl
 });
 
 Model.knex(knex);
