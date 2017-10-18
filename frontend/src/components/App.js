@@ -35,7 +35,7 @@ class App extends Component {
     };
     if (token) {
       axios
-        .post("https://glacial-thicket-62880.herokuapp.com/users/reauth", token)
+        .post("https://the-ink-fpxkusypdu.now.sh/users/reauth", token)
         .then(response => {
           response;
           window.localStorage.setItem("token", response.data.token);

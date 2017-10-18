@@ -52,10 +52,7 @@ export default class BlogContent extends Component {
       token: token
     };
     axios
-      .post(
-        "https://glacial-thicket-62880.herokuapp.com/users/blogs/comment",
-        comment
-      )
+      .post("https://the-ink-fpxkusypdu.now.sh/users/blogs/comment", comment)
       .then(response => {
         if (response.data) {
           e.target[0].value = "";

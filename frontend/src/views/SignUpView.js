@@ -20,10 +20,7 @@ export default class SignUpView extends Component {
       bio: e.target[6].value
     };
     axios
-      .post(
-        "https://glacial-thicket-62880.herokuapp.com/users/signup",
-        newMember
-      )
+      .post("https://the-ink-fpxkusypdu.now.sh/users/signup", newMember)
       .then(response => {
         if (!response.data) {
           this.setState({
