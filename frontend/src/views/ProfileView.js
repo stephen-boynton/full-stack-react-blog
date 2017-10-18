@@ -20,7 +20,7 @@ export default class ProfileView extends Component {
   }
   _getUserandPosts = async () => {
     const { username } = this.props.match.params;
-    const thisProfile = await axios.get("/users/" + username).then(user => {
+    const thisProfile = await axios.get("https://glacial-thicket-62880.herokuapp.com/users/"; + username).then(user => {
       return user.data;
     });
     const thesePosts = await axios

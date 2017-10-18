@@ -34,7 +34,7 @@ class App extends Component {
       token: window.localStorage.getItem("token")
     };
     if (token) {
-      axios.post("/users/reauth", token).then(response => {
+      axios.post("https://glacial-thicket-62880.herokuapp.com/users/reauth";, token).then(response => {
         response;
         window.localStorage.setItem("token", response.data.token);
         const userReauth = response.data.user;

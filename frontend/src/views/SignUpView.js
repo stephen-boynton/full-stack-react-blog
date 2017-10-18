@@ -19,7 +19,7 @@ export default class SignUpView extends Component {
       avatar: e.target[5].value,
       bio: e.target[6].value
     };
-    axios.post("/users/signup", newMember).then(response => {
+    axios.post("https://glacial-thicket-62880.herokuapp.com/users/signup";, newMember).then(response => {
       if (!response.data) {
         this.setState({
           errorMessage: "* Username already exists. *"

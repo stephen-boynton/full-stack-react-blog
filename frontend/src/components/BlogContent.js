@@ -51,7 +51,7 @@ export default class BlogContent extends Component {
       post_id: postId,
       token: token
     };
-    axios.post("/users/blogs/comment", comment).then(response => {
+    axios.post("https://glacial-thicket-62880.herokuapp.com/users/blogs/comment";, comment).then(response => {
       if (response.data) {
         e.target[0].value = "";
         e.target[1].value = "";

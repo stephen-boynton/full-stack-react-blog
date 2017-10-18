@@ -18,7 +18,7 @@ export default class MainView extends Component {
   }
 
   _fetchFrontPageContent = () => {
-    axios.get("/homeview").then(content => {
+    axios.get("https://glacial-thicket-62880.herokuapp.com/homeview";).then(content => {
       const data = content.data;
       this.setState({
         latest: data.last[0],
