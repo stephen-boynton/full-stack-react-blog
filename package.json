@@ -1,29 +1,32 @@
 {
-	"name": "the-ink",
-	"version": "0.0.0",
-	"private": true,
-	"scripts": {
-		"start": "nodemon app.js"
-	},
-	"dependencies": {
-		"axios": "^0.16.2",
-		"bcrypt": "^1.0.3",
-		"bluebird": "^3.5.1",
-		"body-parser": "~1.18.2",
-		"cookie-parser": "~1.4.3",
-		"debug": "~2.6.9",
-		"ejs": "~2.5.7",
-		"express": "~4.15.5",
-		"jsonwebtoken": "^8.1.0",
-		"knex": "^0.13.0",
-		"morgan": "~1.9.0",
-		"nodemon": "^1.12.1",
-		"objection": "^0.8.9",
-		"react-modal": "^3.0.3",
-		"serve-favicon": "~2.4.5",
-		"sqlite3": "^3.1.13"
-	},
-	"devDependencies": {
-		"dotenv": "^4.0.0"
-	}
+  "name": "the-ink",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "engines": {
+    "node": "8.2.1"
+  },
+  "dependencies": {
+    "axios": "^0.16.2",
+    "bcrypt": "^1.0.3",
+    "bluebird": "^3.5.1",
+    "body-parser": "~1.18.2",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "ejs": "~2.5.7",
+    "express": "~4.15.5",
+    "jsonwebtoken": "^8.1.0",
+    "knex": "^0.13.0",
+    "morgan": "~1.9.0",
+    "nodemon": "^1.12.1",
+    "objection": "^0.8.9",
+    "react-modal": "^3.0.3",
+    "serve-favicon": "~2.4.5",
+    "sqlite3": "^3.1.13"
+  },
+  "devDependencies": {
+    "dotenv": "^4.0.0"
+  }
 }
