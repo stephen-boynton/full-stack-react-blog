@@ -18,7 +18,7 @@ export default class MainView extends Component {
   }
 
   _fetchFrontPageContent = () => {
-    axios.get("https://the-ink-hhkohdvsan.now.sh/homeview").then(content => {
+    axios.get("https://the-ink-xrzvapcmnw.now.sh/homeview").then(content => {
       const data = content.data;
       this.setState({
         latest: data.last[0],

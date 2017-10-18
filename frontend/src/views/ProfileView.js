@@ -21,7 +21,7 @@ export default class ProfileView extends Component {
   _getUserandPosts = async () => {
     const { username } = this.props.match.params;
     const thisProfile = await axios
-      .get("https://the-ink-hhkohdvsan.now.sh/users/" + username)
+      .get("https://the-ink-xrzvapcmnw.now.sh/users/" + username)
       .then(user => {
         return user.data;
       });

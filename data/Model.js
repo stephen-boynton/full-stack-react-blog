@@ -8,8 +8,8 @@ const knex = Knex({
   client: "pg",
   connection: process.env.DATABASE_URL
 });
-
-Model.knex(knex);
+https://the-ink-xrzvapcmnw.now.sh/
+https: Model.knex(knex);
 
 const schemaAuthor = knex.schema.createTableIfNotExists("Author", table => {
   table.increments("author_id").primary();
